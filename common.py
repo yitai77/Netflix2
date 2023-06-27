@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("./netflix1.csv")
+data = pd.read_csv("netflix1.csv")
 
 
 @st.cache_data
