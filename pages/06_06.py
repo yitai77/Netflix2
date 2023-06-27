@@ -13,6 +13,7 @@ st.title("Distribution of TV show season counts in South Korea and the United St
 
 
 
+
 sk_data = data_1[data_1['country'] == 'South Korea']
 usa_data = data_1[data_1['country'] == 'United States']
 
