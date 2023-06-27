@@ -9,7 +9,8 @@ data_1 = common.data
 
 
 # st.title( “Distribution of TV show season counts in South Korea and the United States” )
-st.title("Distribution of Tv show season counts in South Korea and the United States")
+st.title("Distribution of TV show season counts in South Korea and the United States")
+
 
 
 sk_data = data_1[data_1['country'] == 'South Korea']
@@ -45,7 +46,7 @@ with tab1:
 
 
 with tab2:
- usa_movies_data = data_1[(data['country'] == 'United States') & (data_1['type'] == 'Movie')]
+ usa_movies_data = data_1[(data_1['country'] == 'United States') & (data_1['type'] == 'Movie')]
  duration = usa_movies_data['duration'].str.replace('min', '').astype(int)
  plt.figure(figsize=(10, 6))
  sns.distplot(duration, bins=30, hist=True, kde=True, color='green')

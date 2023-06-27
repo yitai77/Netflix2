@@ -7,7 +7,7 @@ common.page_config()
 
 
 st.title("Distribution of TV show season counts in South Korea and the United States")
-data = common.get_sales()
+data = common.data
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
 
