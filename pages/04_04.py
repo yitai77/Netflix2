@@ -15,8 +15,6 @@ ko_genre_counts = Korean['listed_in'].str.split(',').explode().str.strip().value
 ko_top_10_genres = ko_genre_counts.head(10)
 
 #파이 차트
-
-
 fig, ax = plt.subplots()
 ax.pie(ko_top_10_genres, labels=ko_top_10_genres.index, autopct='%1.1f%%')
 
