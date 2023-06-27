@@ -4,10 +4,13 @@ import plotly.graph_objects as go
 import common
 import seaborn as sns
 common.page_config()
+
+
 st.title("Distribution of TV show season counts in South Korea and the United States")
 data = common.get_sales()
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
+
 # Tab 구성
 tab1, tab2, tab3 = st.tabs(["South Korea", "United States", "Comparison"])
 sk_data_counts = sk_data['type'].value_counts()
