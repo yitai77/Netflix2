@@ -16,7 +16,7 @@ ax.bar(sk_year_counts.index, sk_year_counts.values, color=color)
 ax.set_xlabel('Year')
 ax.set_ylabel('Count')
 ax.set_xticks(sk_year_counts.index, sk_year_counts.index.astype(int), rotation=45)
-ax.set_title('Netflix Shows in the South Korea by Year')
+ax.set_title('Netflix Shows in South Korea by Year')
 st.pyplot(fig)
 
 
@@ -40,7 +40,7 @@ xticks = range(start_year, end_year, 10)
 ax.set_xticks(xticks)  # Set x-ticks at each decade
 ax.set_xticklabels([f'{i}s' for i in xticks], rotation=0)
 
-ax.set_title('Netflix Shows in the US by Year')
+ax.set_title('Netflix Shows in US by Year')
 st.pyplot(fig)
 
 

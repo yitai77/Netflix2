@@ -20,7 +20,7 @@ ko_top_10_genres = ko_genre_counts.head(10)
 fig, ax = plt.subplots()
 ax.pie(ko_top_10_genres, labels=ko_top_10_genres.index, autopct='%1.1f%%')
 
-ax.set_title('Netflix Shows in the South Korea')
+ax.set_title('Netflix Shows in South Korea')
 
 st.pyplot(fig)
 

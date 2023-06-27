@@ -6,7 +6,7 @@ import seaborn as sns
 common.page_config()
 
 
-st.title("Distribution of TV show season counts in South Korea and the United States")
+st.title("Distribution of TV show season counts in South Korea and United States")
 data = common.data
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
@@ -27,7 +27,7 @@ with tab1:
     seasons = sk_tv_shows_data['duration'].str.extract('(\d+)').astype(int)
     plt.figure(figsize=(10, 6))
     sns.distplot(seasons, bins=30, hist=True, kde=True, color='red')
-    plt.title('Distribution of TV Show Durations (Seasons) for Netflix Content in the South Korea')
+    plt.title('Distribution of TV Show Durations (Seasons) for Netflix Content in South Korea')
     plt.xlabel('Number of Seasons')
     plt.ylabel('Count')
     plt.show()
@@ -38,7 +38,7 @@ with tab2:
     seasons = usa_tv_shows_data['duration'].str.extract('(\d+)').astype(int)
     plt.figure(figsize=(10, 6))
     sns.distplot(seasons, bins=30, hist=True, kde=True, color='green')
-    plt.title('Distribution of TV Show Durations (Seasons) for Netflix Content in the United States')
+    plt.title('Distribution of TV Show Durations (Seasons) for Netflix Content in United States')
     plt.xlabel('Number of Seasons')
     plt.ylabel('Density')
     plt.show()

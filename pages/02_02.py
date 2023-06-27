@@ -19,7 +19,7 @@ colors = ['violet', 'mistyrose']
 fig, ax = plt.subplots()
 ax.pie(sk_data_counts, labels=sk_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
 ax.axis('equal')
-ax.set_title('Netflix Shows in the South Korea')
+ax.set_title('Netflix Shows in South Korea')
 
 st.pyplot(fig)
 
@@ -35,6 +35,6 @@ us_data_counts = US['type'].value_counts()
 fig, ax = plt.subplots()
 ax.pie(us_data_counts, labels=us_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
 ax.axis('equal')
-ax.set_title('Netflix Shows in the US')
+ax.set_title('Netflix Shows in US')
 
 st.pyplot(fig)
