@@ -38,3 +38,21 @@ ax.axis('equal')
 ax.set_title('Netflix Shows in US')
 
 st.pyplot(fig)
+
+
+sk_data_counts,us_data_counts
+# 그래프 영역 설정
+fig, ax = plt.subplots()
+# South Korea 그래프 그리기
+ax.plot(sk_data_counts.index, sk_data_counts, marker='o', linestyle='-', color='violet', label='South Korea')
+
+# United States 그래프 그리기
+ax.plot(us_data_counts.index, us_data_counts, marker='o', linestyle='-', color='green', label='United States')
+
+# 축과 제목 설정
+plt.xlabel('Type')
+plt.ylabel('Count')
+plt.title('Netflix Shows Comparison')
+plt.legend()
+
+st.pyplot(fig)
