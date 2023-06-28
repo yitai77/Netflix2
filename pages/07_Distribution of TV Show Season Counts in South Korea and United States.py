@@ -6,7 +6,7 @@ import seaborn as sns
 common.page_config()
 
 
-st.title("Distribution of TV show season counts in South Korea and United States")
+st.title("Distribution of TV Show Season Counts in South Korea and United States")
 data = common.data
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']

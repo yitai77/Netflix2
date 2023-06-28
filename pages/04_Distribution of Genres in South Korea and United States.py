@@ -25,7 +25,7 @@ with tab1:
     fig, ax = plt.subplots()
     ax.pie(ko_top_10_genres, labels=ko_top_10_genres.index, autopct='%1.1f%%')
 
-    ax.set_title('Netflix Shows in South Korea')
+    ax.set_title('Netflix TOP 10 Genres in South Korea')
     st.pyplot(fig)
     ko_top_10_genres
 
@@ -42,7 +42,7 @@ with tab2:
     fig, ax = plt.subplots()
     ax.pie(us_top_10_genres, labels=us_top_10_genres.index, autopct='%1.1f%%')
 
-    ax.set_title('Netflix Shows in the US')
+    ax.set_title('Netflix TOP 10 Genres in US')
     st.pyplot(fig)
     us_top_10_genres
 

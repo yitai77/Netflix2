@@ -9,7 +9,7 @@ data_1 = common.data
 
 
 # st.title( “Distribution of TV show season counts in South Korea and the United States” )
-st.title("Distribution of TV show season counts in South Korea and the United States")
+st.title("Distribution of Movie Durations in South Korea and the United States")
 
 
 
