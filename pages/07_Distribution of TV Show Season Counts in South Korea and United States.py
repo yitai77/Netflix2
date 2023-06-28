@@ -24,7 +24,7 @@ with tab1:
     sns.distplot(seasons, bins=30, hist=True, kde=True, color='red')
     plt.title('Distribution of TV Show Durations (Seasons) for Netflix Content in South Korea')
     plt.xlabel('Number of Seasons')
-    plt.ylabel('Count')
+    plt.ylabel('Density')
     plt.show()
     st.pyplot(plt)
     sk_data
@@ -52,7 +52,7 @@ with tab3:
     sns.distplot(sk_seasons, bins=30, hist=True, kde=True, color='red', label='South Korea')
     plt.title('Distribution of TV Show Durations (Seasons) for Netflix Content')
     plt.xlabel('Number of Seasons')
-    plt.ylabel('Density/Count')
+    plt.ylabel('Density')
     plt.legend()
     plt.show()
     st.pyplot(plt)
