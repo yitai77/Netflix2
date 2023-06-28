@@ -26,7 +26,6 @@ with tab1:
     sk_data_counts
 
 with tab2:
-    st.title("US-Data")
     US = common.get_us_data()
 
 #색상 설정
