@@ -15,12 +15,7 @@ usa_data = data[data['country'] == 'United States']
 tab1, tab2, tab3 = st.tabs(["South Korea", "United States", "Comparison"])
 sk_data_counts = sk_data['type'].value_counts()
 usa_data_counts = usa_data['type'].value_counts()
-st.title("South Korea-Data")
-sk_data = data[data['country'] == 'South Korea']
-st.write(sk_data)
-st.title("United States-Data")
-usa_data = data[data['country'] == 'United States']
-st.write(usa_data)
+
 with tab1:
     #sk_data_counts = sk_data['type'].value_counts()
     sk_tv_shows_data = data[(data['country'] == 'South Korea') & (data['type'] == 'TV Show')]
@@ -32,6 +27,7 @@ with tab1:
     plt.ylabel('Count')
     plt.show()
     st.pyplot(plt)
+    sk_data
 with tab2:
     #usa_data_counts = usa_data['type'].value_counts()
     usa_tv_shows_data = data[(data['country'] == 'United States') & (data['type'] == 'TV Show')]
@@ -43,6 +39,7 @@ with tab2:
     plt.ylabel('Density')
     plt.show()
     st.pyplot(plt)
+    usa_data
 with tab3:
     #sk_data_counts = sk_data['type'].value_counts()
     #usa_data_counts = usa_data['type'].value_counts()
