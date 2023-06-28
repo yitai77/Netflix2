@@ -44,6 +44,8 @@ with tab1:
  plt.ylabel('Density')
  plt.show()
  st.pyplot(plt)
+ st.write("KR Duration Data")
+ duration
 
 
 with tab2:
@@ -56,6 +58,9 @@ with tab2:
  plt.ylabel('Density')
  plt.show()
  st.pyplot(plt)
+ st.write("US Duration Data")
+ duration
+
 with tab3:
  plt.figure(figsize=(10, 6))
  sk_movies_data = data_1[(data_1['country'] == 'South Korea') & (data_1['type'] == 'Movie')]

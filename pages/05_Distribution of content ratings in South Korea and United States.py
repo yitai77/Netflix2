@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+st.title("Distribution of Content Ratings in South Korea and United States")
 tab1, tab2 = st.tabs(["South Korea", "United States"])
 with tab1:
     Korean = common.get_ko_data()
