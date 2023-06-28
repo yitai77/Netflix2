@@ -36,7 +36,7 @@ with tab2:
     fig, ax = plt.subplots()
     ax.pie(us_data_counts, labels=us_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
     ax.axis('equal')
-    ax.set_title('Netflix Shows in US')
+    ax.set_title('Netflix Shows in United States')
 
     st.pyplot(fig)
     us_data_counts
